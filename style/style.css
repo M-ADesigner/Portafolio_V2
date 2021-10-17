@@ -1,0 +1,516 @@
+/*Start Main Rulez*/
+* {
+  
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+  }
+  
+/****************************Comienzo del header*******************************/
+
+
+
+.header .slider /*Insertamos una imagen dentro del header y slider*/ 
+{
+	background:#ffffff;
+	height:600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	background-image:url(/img/aerial-view-business-team.jpg);
+   
+
+}
+.header .slider .intro
+{
+	padding-top:200px;
+	text-align:center;
+	color:#FFF;
+}
+.header .slider .intro h1 /*Insertamos una barra solida en el titulo*/
+{
+	margin:0 auto;
+	width:600px;
+	border-top:4px solid #FFF;
+	border-bottom:4px solid #FFF;
+	padding:5px 0;
+
+}
+.header .slider .intro span
+{
+	color:#087637;
+}
+
+.header .slider .intro button{
+   
+    background: none;
+    width: 160px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    border: 1px solid aqua;
+    border-radius: 10%;
+    
+}
+
+.header .slider .intro button:hover{
+
+    background:#2ecc71;
+	color:#FFF;
+}
+
+ /*Ingresamos un recorte de fondo*/
+.header .navbar{
+
+    background:#252e30;
+	color:#ffffff;
+	overflow:hidden;
+
+}
+
+.header .navbar ul li {
+    list-style: none;
+}
+
+.header .navbar h2{  /*Nombre */
+
+    letter-spacing: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    float:left;
+    padding-left: 20px;
+     
+}
+
+.header .navbar h2 span /*Colores de span*/
+{
+	color:#2ecc71;
+
+}
+
+.header .navbar h2 span:hover /*Muestre despues de selecionar los span*/
+{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 5px;
+    cursor:crosshair;
+}
+.header .navbar ul{ /*le quitamos el stilo a las listas y lo dirijimos de lado derecho*/
+		list-style:none;
+        float: right;
+	
+}
+
+.header .navbar ul li  /*Lo arreglamos de tipo flex ordenados*/
+{
+	padding:10px;
+    float: left;
+    
+		
+}
+.header .navbar ul li a /*Le asignamos un color y le quitamos el stilo por defecto de las listas*/
+{
+	color:#FFF;
+	text-decoration:none;
+}
+.header .navbar ul li a:hover
+{
+		color:#2ecc71;
+		font-family: 'Courier New', Courier, monospace;
+        font-size: 1em;
+}
+/*Fin de la cabezera*/
+
+
+
+/*-------------------------------Comienzo de la informacion-------------------------------------------------*/
+
+.inform {       
+    background: #DDD;                    
+    overflow:hidden;
+    padding-top: 40px;
+    
+
+}
+
+
+.inform .feat h1{              /*Tipo de letra y color en el titulo*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    
+}
+
+.inform .feat{   /*Tipos de direccion de cada parrafo*/   /*Separacion entre los demas */
+    float: left;
+    height: 200px;
+    width: 50%;
+}
+
+.inform .feat p{              /*Tipo de letra y color en los parrafos*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color:#888080;
+    display: flex;
+    
+ 
+    
+}
+
+
+.inform .feat p:hover{              /*Cmbiar de color al selecionar el parrafo*/
+  
+    color: aqua
+}
+/**************************************Fin de la informacion*********************************/
+
+
+/**************************************Comienzo del acerca de about me*********************************/
+
+
+.about
+{
+	overflow:hidden;
+	padding-top:50px;
+	padding-bottom:20px;
+}
+.about .image
+{
+	float:left;
+	width:35%;
+	border-radius:50%
+
+}
+.about .image img
+{
+	width:100%;
+	height:500px;
+	border-radius:5%;
+}
+.about .info
+{
+	margin-left:5%;
+	float:left;
+	width:60%;
+}
+.about .info h1 , .about .info .hoppies h1
+{
+	margin:10px 0 10px 40px ;
+	color:#2ecc71;
+	font-family: "Andale Mono", AndaleMono, monospace;
+}
+.about .info p , .about .info .hoppies p
+{
+	margin:0 0 10px 40px;
+	font-family: "Andale Mono", AndaleMono, monospace;
+	color:#837f7f;
+}
+.about .info .hoppies
+{
+	overflow:hidden;
+	margin:10px;
+	font-size:13px
+}
+.about .info .hoppies .content
+{
+	float:left;
+	width:50%;
+	min-height:100px;	
+}
+.about .info .hoppies .content .icon
+{
+	float:left;
+	width:12%;
+	margin-right:5%;
+	margin-top:-13%;
+	
+}
+.about .info .hoppies .content .icon img
+{
+	max-width:100%;
+	margin:50px 20px 0 0;
+	border-radius:20%
+}
+
+.about .info .hoppies .content .icon .text
+{
+	float:left;
+	width:88%;
+	
+}
+
+
+
+/**********************************************Fin del acerca de about me*************************************/
+
+
+/**********************************************Comienzo de mis habilidades************************************/
+
+.skills
+{
+	overflow:hidden;
+	padding-top:50px;
+	padding-bottom:20px;
+	
+}
+.skills .info, .skills .progress
+ 
+{
+	margin:0px;
+	float:left;
+	width:50%;
+}
+.skills .info h1
+{
+	color:#666666;
+	font-family:Arial, Helvetica, sans-serif;
+
+}
+.skills .info h1:hover
+{
+	color:#000000;
+	cursor:pointer;
+}
+.skills .info  ul li
+{
+	
+	color:#555555;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	margin-top: 10px;
+	list-style-type:circle;
+	margin-left: 50px;
+	
+}
+.skills .info  ul li:hover
+{
+	background:#2ecc71;
+	color:#000000;
+	cursor:pointer;
+	font-size:25px;
+	list-style-type:square;
+	font-family:Arial, Helvetica, sans-serif;
+
+	
+}
+
+.skills .container .progress .technique h2{
+	font-size: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #888080;
+}
+
+.skills .container .progress .technique h2:hover{
+	font-size: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+
+
+.skills .info button 
+{
+	background:#FFF;
+	color:#2ecc71;
+	border:2px solid #2ecc71;
+	cursor:pointer;
+	width:180px;
+	height:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	margin-top:10px;
+}
+.skills .info button:hover 
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size: 30px;
+}
+
+.skills .progress .technique
+{
+	margin-left: 30px;
+	max-width: 100%;
+}
+.skills .progress .technique h2
+{
+	color:#566366;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.skills .progress .technique div
+{
+	background:#e1e1dd;
+	height:30px;
+}
+
+.skills .progress .technique div span
+{
+	background:#2ecc71;
+	color:#FFF;
+	height:30px;
+	display:block;
+	font-size:20px;
+	font-weight:bold;
+	line-height:25px;
+	text-align:right;
+	font-family:Arial, Helvetica, sans-serif;
+
+	
+}
+
+.skills .progress .technique div span:hover
+{
+	background:#585858;
+	color:#2ecc71;
+	height:30px;
+	display:block;
+	font-size:20px;
+	font-weight:bold;
+	line-height:25px;
+	text-align:right;
+	font-family:Arial, Helvetica, sans-serif;
+	
+}
+
+
+/**********************************************Cierre de mis habilidades************************************/
+
+/**********************************************Comienzo DOWNLOADS************************************/
+
+.CV{
+	background:#DDD;
+	overflow:hidden;
+	padding-top:100px;
+	padding-bottom: 200px;
+	text-align:center;
+	height:250px;
+
+
+}
+
+.CV button{
+	width:300px;
+}
+
+.CV h1{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.CV button{
+	margin-top: 15px;
+	height: 25px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.CV button:hover{
+	font-size: 20px;
+	cursor: pointer;
+}
+
+/**********************************************Fin de  DOWNLOADS************************************/
+
+
+/**********************************************Inicio de  footer************************************/
+
+
+.footer{
+	overflow: hidden;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	background: #DDD; 
+}
+
+.footer .title{
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-bottom: 20px;
+}
+
+
+.footer .wrapper {  /*Iconocs centrados*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+.footer .wrapper .icon { /*Salida de iconos*/
+	position: relative;
+	background-color: #ffffff;
+	border-radius: 50%;
+	padding: 15px;
+	margin: 10px;
+	width: 50px;
+	height: 50px;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .footer   .wrapper .tooltip {/*Edicion salida de titulos*/
+	position: absolute;
+	top: 0;
+	font-size: 14px;
+	background-color: #ffffff;
+	color: #ffffff;
+	padding: 5px 8px;
+	border-radius: 5px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .footer   .wrapper .tooltip::before {/*Tocada*/
+	height: 8px;                
+	width: 8px;                
+	background-color: #ffffff;
+	bottom: -3px;
+	left: 50%;
+  }
+  
+  .footer  .wrapper .icon:hover .tooltip { /*Salida*/
+	top: -35px;
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+  }
+  
+  
+Icon facebook
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+	background-color: #3b5999; 
+	color: #ffffff;
+  }
+  
+Icon twitter
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+	background-color: #46c1f6; 
+	color: #ffffff;
+  }
+  
+Icon instagram
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+	background-color: #e1306c; 
+	color: #ffffff;
+  }
+  
+Icon github
+  .wrapper .github:hover,
+  .wrapper .github:hover .tooltip,
+  .wrapper .github:hover .tooltip::before {
+	background-color: #333333; 
+	color: #ffffff;  
+  }
+  
